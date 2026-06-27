@@ -1,1 +1,1 @@
-# Pineapple
+# Pineapple Project

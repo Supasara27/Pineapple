@@ -433,7 +433,7 @@ export default function App() {
         {activeTab === 'add_plot' && renderAddPlot()}
         {activeTab === 'report' && renderReport()}
 
-        {/* Bottom Navigation (เพิ่มแท็บ Report) */}
+        {/* Bottom Navigation */}
         <div className="absolute bottom-0 w-full bg-white border-t border-gray-200 flex justify-around p-3 pb-5 z-10 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
           <button onClick={() => setActiveTab('dashboard')} className={`flex flex-col items-center p-2 w-20 ${activeTab === 'dashboard' ? 'text-green-600' : 'text-gray-400 hover:text-gray-600'}`}>
             <Home className="w-6 h-6 mb-1" />
@@ -450,7 +450,7 @@ export default function App() {
         </div>
 
         {/* ==============================================
-            MODAL 1: บันทึกปุ๋ย/ยา (เหมือนเดิม)
+            MODAL 1: บันทึกปุ๋ย/ยา
         ============================================== */}
         {recordModal.show && (
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -513,7 +513,7 @@ export default function App() {
         )}
 
         {/* ==============================================
-            MODAL 2: บันทึกการเก็บเกี่ยวผลผลิต (เหมือนเดิม)
+            MODAL 2: บันทึกการเก็บเกี่ยวผลผลิต
         ============================================== */}
         {harvestModal.show && (
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
